@@ -15,7 +15,7 @@ user_states = {}
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "Привет! Мы рады, что ты хочешь попасть на Бал.\n\n"
-        "Пожалуйста, напиши своё Фамилия, Имя и Класс (пример: Байдуллаев Зейнулла 10Д)"
+        "Пожалуйста, напишите ваше Фамилия, Имя и Класс (пример: Асетов Асан 11А)"
     )
 
 # Приём ФИО
@@ -26,9 +26,9 @@ async def handle_name(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_states[user_id] = "waiting_for_pdf"
 
     await update.message.reply_text(
-        f"«{full_text}» стоимость билета 2500тг на одного человека.\n\n"
+        f"«{full_text}» стоимость билета 1500тг на одного человека.\n\n"
         "Для приобретения, отправь деньги на номер KASPI:\n"
-        "*87752027187* Байдуллаев Зейнулла\n\n"
+        "*87012509998* Санжар К.\n\n"
         "И пришли, пожалуйста, чек в формате **PDF** сюда в этот чат."
     )
 
